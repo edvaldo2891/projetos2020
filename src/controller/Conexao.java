@@ -14,18 +14,18 @@ public class Conexao {
     private Connection con = null;
 
    public Conexao() {
-       
+       /*
        URL_MYSQL= "jdbc:mysql://20.20.7.82/planta_generica";
        DRIVER_CLASS= "com.mysql.jdbc.Driver";
        USER="root";
        PASS="";
        con = null;
-       /*
+       */
        URL_MYSQL= "jdbc:mysql://localhost/planta_generica";
        DRIVER_CLASS= "com.mysql.jdbc.Driver";
        USER="root";
        PASS="";
-       con = null*/
+       con = null;
     }
    
    public void conectar(){
