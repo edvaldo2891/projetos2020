@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7696e2bf-1e86-4756-876a-28b96491be39">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="451"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="2946ae59-d490-4fb4-8d22-9ba3825fe3ee"/>
+	<field name="protocolo" class="java.lang.String"/>
+	<field name="data" class="java.lang.String"/>
+	<field name="rua" class="java.lang.String"/>
+	<field name="proprietario" class="java.lang.String"/>
+	<field name="numero" class="java.lang.String"/>
+	<field name="inscCadastral" class="java.lang.String"/>
+	<field name="construcao" class="java.lang.String"/>
+	<field name="terreno" class="java.lang.String"/>
+	<field name="exercicio" class="java.lang.String"/>
+	<field name="valorVenal" class="java.lang.String"/>
+	<field name="dataSistema" class="java.lang.String"/>
+	<field name="bairro" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="30" y="0" width="137" height="79" uuid="2c6ecfec-c7e5-4c4c-ad43-ab233287b859"/>
+				<imageExpression><![CDATA["C:\\prjVenalUrbano\\imagens\\brasao.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="119" y="10" width="436" height="30" uuid="f95786c4-9902-4b41-9539-463680977901"/>
+				<textElement>
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PREFEITURA MUNICIPAL DE ITARARÉ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="226" y="30" width="150" height="20" uuid="9fd307b6-ca5d-488c-a850-9e4e686d24e7"/>
+				<box topPadding="3"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SETOR DA LANÇADORIA]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-18" y="78" width="588" height="1" uuid="d7abaf11-a1ef-4a70-8959-662b9c636cf9"/>
+			</line>
+			<staticText>
+				<reportElement x="131" y="62" width="338" height="16" uuid="122ea1f9-24d8-4538-8dd8-cda681ed6baa"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rua XV de Novembro, 83 - Centro - Itararé/SP   CEP: 18460-000 - Fone/Fax (15) 3532-8000
+]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="35" uuid="a6fa1653-b852-48ca-8480-696df69adf1d"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true" isItalic="true" isUnderline="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[C  E  R  T  I  D  Ã  O]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="589" splitType="Stretch">
+			<staticText>
+				<reportElement x="250" y="62" width="164" height="20" uuid="ef020bb0-24b2-4472-a417-940e24a31c84"/>
+				<textElement>
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[C]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="82" width="164" height="20" uuid="c84d7867-9dbb-450e-b714-8deb656a2379"/>
+				<textElement>
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[  E]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="102" width="164" height="20" uuid="1dfea7c9-891a-4e11-b033-eee6a2a2a28a"/>
+				<textElement>
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[    R]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="122" width="164" height="20" uuid="65df4621-289a-4f95-8d10-1a158e9ade55"/>
+				<textElement>
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[      T]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="142" width="164" height="20" uuid="5a14dd2d-9b28-41ec-8799-9eded29d1f2b"/>
+				<textElement>
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[         I]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="162" width="164" height="20" uuid="a844f50b-87ca-4d3c-a12e-2376b7c9f526"/>
+				<textElement>
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[          F]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="182" width="164" height="20" uuid="f877d4ac-4067-4a07-9e06-25aa68ad306c"/>
+				<textElement>
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[             I]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="202" width="164" height="20" uuid="511e5c65-4a66-437d-b6ca-f418f62b65ca"/>
+				<textElement>
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[              C]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="222" width="82" height="20" uuid="612c88fc-c9f6-4867-a086-90fc6e0c7e27"/>
+				<textElement>
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[                A,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="332" y="225" width="185" height="20" uuid="aeace874-1309-45b6-be9e-e469a1f04231"/>
+				<box topPadding="5"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[ a pedido da pessoa interessada, ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="47" y="245" width="470" height="32" uuid="1f0617e8-8ed4-4c9d-8f60-5d2c18ba2548"/>
+				<box topPadding="0"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["protocolo número "+$F{protocolo}+ ", de "+$F{data}+", que revendo os assentamentos nesta repartição constatei que:"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="47" y="288" width="470" height="83" uuid="0ca01282-19ad-4eef-af02-9d6e070a0ee9"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t\tO imóvel de propriedade de "+$F{proprietario}+", localizado na Rua "+$F{rua}+
+", nº "+$F{numero}+", bairro "+$F{bairro}+", área de terreno medindo "+$F{terreno}+"m² sem benfeitorias, cadastro imobiliário sob número "+$F{inscCadastral}+", sendo seu valor venal total no exercicio de "+$F{exercicio}+" de "+$F{valorVenal}+"."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="150" y="7" width="187" height="20" uuid="3398ca07-f317-48d8-b1c7-c463565dccdf"/>
+				<box topPadding="5"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EDVALDO ANTUNES DA SILVA,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="337" y="7" width="170" height="20" uuid="8f88b392-be1d-47c7-ad65-05f9ef651d2e"/>
+				<box topPadding="5"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Chefe do Setor de Lançadoria ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="47" y="27" width="470" height="35" uuid="16dbd912-b02b-4d70-9c56-7c24a252d673"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[da Prefeitura Municipa de Itararé- Estado de São Paulo, usando das atribuições que a lei lhe confere:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="463" width="267" height="20" uuid="7d5b9a29-f879-4a2f-8e88-3e4cf1123c41"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Setor de Lançadoria da Prefeitura Municipal de]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="47" y="483" width="456" height="20" uuid="916a9f7e-aafe-49dd-8219-c8ad16b1373c"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Itararé-SP, "+$F{dataSistema}+"."]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="154" y="32" width="203" height="13" uuid="c73cb452-3adb-4509-8f46-103d18907d06"/>
+				<textElement>
+					<font size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[        CHEFE DO SETOR DE LANÇADORIA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="167" y="12" width="203" height="20" uuid="9d916b10-ea8e-4de7-9a80-a4870589da9b"/>
+				<box topPadding="3"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EDVALDO ANTUNES DA SILVA]]></text>
+			</staticText>
+			<line>
+				<reportElement x="119" y="11" width="277" height="1" uuid="58dc42b6-daf1-4bbc-a08c-a3c0b8030baa"/>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>
